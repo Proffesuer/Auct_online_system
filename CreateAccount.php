@@ -56,30 +56,33 @@
 
   <form action="connect.php" method="post"id="back">
 	<h4 align="center"style="color:white">CREATE ACCOUNT</h4>
-            <label class="lable"> <span>Firstname:</span>
+            <label class="lable"> <span>Firstname:</span><br>
             <input type="text" class="input_text" name="fname" value="<?php echo $Firstname;?>" required/>
             </label>
-			<br><br>
-			<label class="lable"> <span>Lastname:</span>
+			<br>
+			
+			<label class="lable"> <span>Lastname:</span><br>
+
             <input type="text" class="input_text" name="lname" value="<?php echo $Lastname;?>" required />
             </label>
-			<br><br>
-            <label class="lable"> <span>Username</span>
+			<br>
+            <label class="lable"> <span>Username</span><br>
             <input type="text" class="input_text" name="username" value="<?php echo $Username;?>" required/>
 			</label>
-			<br><br>
-            <label class="lable"> <span>Email:</span>
+			<br>
+            <label class="lable"> <span>Email:</span><br>
             <input type="text" class="input_text" name="email" value="<?php echo $Email;?>" required />
             </label>
-			<br><br>
-			<label class="lable"> <span>Password:</span>
+			<br>
+			<label class="lable"> <span>Password:</span><br>
             <input type="password" class="input_text" name="password" value="<?php echo $Password;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required />
 			</label>
-			<br><br>
-			<label class="lable"> <span>Confirm Password</span>
-            <input type="password" class="input_text" name="confirmpassword" value="<?php echo $Confirmpassword;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
-			<br><br>
-           <input type="submit" name="submit" class="button" value="Register" />
+			<br>
+			<label class="lable"> <span>Confirm Password</span><br>
+            <input type="password" class="input_text" name="confirmpassword" value="<?php echo $Confirmpassword;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number 
+			and one uppercase and lowercase letter, and at least 8 or more characters" required />
+			<br>           
+			<input type="submit" name="submit" class="button" value="Register" /><br>
 		   <div class="login">
 		 <p><font color="#FFFF00"><b><h3>Already Registered Login?<a href="admin_login.php"></h3></b></font><input type="button" class="button" value="Login" /></a></p>
             </label>
@@ -87,6 +90,9 @@
           </div>
         </form>
 	</div>
-    
+
+
+
+
 </body>
 </html>
