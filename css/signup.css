@@ -8,117 +8,6 @@
 /* -The whole page styling */
 
 
-
-#myNav{
-    background-image:url("pic_police/police6.jpg");
-  }
-  .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-  }
-  
-  .overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-  }
-  
-  .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: tomato;
-  display: block;
-  transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  }
-  
-  @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-  }
-
-  
-
-  .navbar{
-    position:fixed;
-    display:block;
-    transition:top 0.4s;
-    background-color:#FF3300;
-    
-    // hight removed to avoid scrolling effects due to padding
-    / * height:50px; */
-
-    overflow-x: hidden;
-    margin-left:25px;
-    margin-right:80px;
-    padding:0%;
-
-    }
-
-
-
-
-    
-    a{
-    text-decoration:none;
-    }
-    
-    .navbar a{
-    float:left;
-    display:block;
-    color:black;
-    text-align:center;
-    padding:14px;
-    text-decoration:none;
-    font-size:15px;
-    }
-    .navbar a:hover{
-    background-color:#000000;
-    color:#FFFFFF;
-    padding:20px 20px 20px 20px;
-    }
-    .About{
-      background-color: black;
-      opacity:.8;
-  
-  
-    }
-    * {box-sizing: border-box}
-  /* Full-width input fields */
-    input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
-  
   /* Add a background color when the inputs get focus */
   input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
@@ -287,18 +176,6 @@ input[type=text],input[type=password], select, textarea {
       padding: 20px 20px 15px 15px;
   
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* -Create Account page stylinhg */
