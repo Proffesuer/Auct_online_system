@@ -51,7 +51,7 @@
 
 
 <div class="container">
-<strong><h1 align="center"class="colorr">AUCTION ONLINE SYSTEM ADMINSTRATORS ACCOUNT</h1></strong>
+<strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
 
 
   <form action="connect.php" method="post"id="back">

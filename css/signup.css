@@ -1,4 +1,4 @@
-                 /*ADMIN LOG-IN PAGE STYLINGS */
+                 /*BOTH ADMIN(CreateAccount.php) AND USER(signup.php) SIGNUP PAGE STYLINGS */
 /*___________________________________________________________________________*/
 
 
@@ -18,12 +18,11 @@
   button {
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+
+
     border: none;
     cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
+
   }
   
   button:hover {
@@ -39,7 +38,7 @@
   /* Float cancel and signup buttons and add an equal width */
   .cancelbtn, .signupbtn {
     float: left;
-    width: 50%;
+  
   }
   
   /* Add padding to container elements */
@@ -114,17 +113,14 @@
 /* -Admin log-in  Area in the page styling */
 
 
-body{
-    
-}
 .lable{
-    margin-left: 200px;
+    margin-left:auto;
     color:ivory;
 
   }
 
 input[type=text],input[type=password], select, textarea {
-    width: 70%;
+   
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -132,9 +128,7 @@ input[type=text],input[type=password], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    margin-left:200px;
-    margin-right:200px;
-
+    
   }
   input[type=submit],input[type=button] {
     background-color:tomato;
@@ -143,16 +137,16 @@ input[type=text],input[type=password], select, textarea {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    margin-left: 500px;
+  
   }
   input[type=submit]:hover {
     background-color:grey;
   }
-  .container {
+  /*.container {
     border-radius: 5px;
     padding: 200px 200px 200px 200px;
     border-radius: 30px;
-  }
+  }*/
   #back{
       background-color: black;
       opacity:.8;
@@ -180,13 +174,8 @@ input[type=text],input[type=password], select, textarea {
 
 /* -Create Account page stylinhg */
 
-
-
-body{
-    
-}
 .lable{
-    margin-left: 200px;
+    
     color:ivory;
 
   }
@@ -197,37 +186,22 @@ input[type=text],input[type=password], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size-adjust: inherit;
-    margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
-    margin-left:200px;
-    margin-right:200px;
-
+    
   }
   input[type=submit],input[type=button] {
     background-color:tomato;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 15px;
+    
     cursor: pointer;
-    margin-left: 500px;
+  
   }
   input[type=submit]:hover {
     background-color:grey;
   }
-  .container {
-    border-radius: 5px;
-    background-image: url('pic_police/police6.jpg');
-    padding: 10px;
-    border-radius: 30px;
-  }
-  #back{
-      background-color: black;
-      opacity:.8;
-     
-      border-radius: 15px;
-  }
+
   .login{
     
     color: white;
@@ -241,7 +215,7 @@ input[type=text],input[type=password], select, textarea {
   .color{
       background-color: tomato;
       border-top: 250px;
-      padding: 20px 20px 15px 15px;
+      padding: 100%;
   }
 
 

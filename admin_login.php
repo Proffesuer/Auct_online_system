@@ -20,25 +20,8 @@
 </head>
 <body>
 
-
-   
-  <strong><h1 align="center"class="color">ADMINSTRATORS ONLY LOG IN PORTAL </h1></strong>
-
-
-
   
-<div class="navbar"id="navbar">
-      
-  <a href="index.html">HOME</a>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
-
-</div>
-
-<br><br><br>
-
-  
-<h2 >~ADMINISTRATOR LOG IN~</h2>
+<h2 >TECHNOMOBIZ</h2>
 
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:250px; align-items:center;">Login</button>
