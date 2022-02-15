@@ -15,7 +15,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel = "stylesheet" type = "text/css" href = " css/signup.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/signup.css">
+    <title>
+      Admin Log_in page
+</title>
 
 </head>
 <body>
@@ -28,10 +31,13 @@
 
 <div id="id01" class="modal">
 
-<form class="modal-content animate" action="Record.html" method="post">
+<form class="modal-content animate" action="#" method="post">
+
 
   <div class="container">
+    
     <label for="uemail"><b>Usermail</b></label>
+  
     <input type="text" placeholder="Enter Usermail" name="uname" required>
 
     <label for="psw"><b>Password</b></label>
@@ -59,7 +65,7 @@
 
 
 
-  <div class="container" style="background-color:#f1f1f1">
+  <div class="container">
     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     <a href="CreateAccount.php"><button type="button"  class="cancelbtn">Create Account</button></a>
     <span class="psw">Forgot <a href="#">password?</a></span>
@@ -108,6 +114,7 @@ window.onclick = function(event) {
 <script src="curtains.js"></script>
 <script>
 // JavaScript Document
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -120,16 +127,6 @@ prevScrollpos = currentScrollPos;
 }
 
 </script>
-
-    <title>Admin log in page</title>
-    <link rel="stylesheet"type="text/css"href="css/loginStyle.css" />
-</head>
-<body>
-
-<h1>
-    hello guys am head
-</h1>
-
 
 </body>
 </html>
