@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel = "stylesheet" type = "text/css" href = "css/signup.css">
+    <link rel = "stylesheet" type = "text/css" href = "signup.css">
     <title>
       Admin Log_in page
 </title>
@@ -23,8 +23,7 @@
 </head>
 <body>
 
-  
-<h2 >TECHNOMOBIZ</h2>
+  <strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
 
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:250px; align-items:center;">Login</button>
@@ -72,6 +71,13 @@
   </div>
 </form>
 </div>
+<footer>
+
+
+
+
+
+</footer>
 
 <script>
 // Get the modal
