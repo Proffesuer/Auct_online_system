@@ -44,7 +44,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin account</title>
-	<link rel= "stylesheet" type= "text/css"  href= "css/signup.css" />
+	<link rel= "stylesheet" type= "text/css"  href= "signup.css" />
 </head>
 <body>
 
@@ -52,34 +52,36 @@
 
 <div class="container">
 <strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
-
+<center>
 
   <form action="connect.php" method="post"id="back">
-	<h4 align="center"style="color:white">CREATE ACCOUNT</h4>
-            <label class="lable"> <span>Firstname:</span><br>
-            <input type="text" class="input_text" name="fname" value="<?php echo $Firstname;?>" required/>
+	<h4 align="center"style="color:white">CREATE ADMIN ACCOUNT</h4>
+
+	<div class="back">
+    
+           <input type="text" class="input_text" name="fname" placeholder="First name"value="<?php echo $Firstname;?>" required/>
             </label>
 			<br>
 			
-			<label class="lable"> <span>Lastname:</span><br>
+			
 
-            <input type="text" class="input_text" name="lname" value="<?php echo $Lastname;?>" required />
+            <input type="text" class="input_text" name="lname" placeholder="Last name"value="<?php echo $Lastname;?>" required />
             </label>
 			<br>
-            <label class="lable"> <span>Username</span><br>
-            <input type="text" class="input_text" name="username" value="<?php echo $Username;?>" required/>
+           
+            <input type="text" class="input_text" name="username" placeholder="username or Id"value="<?php echo $Username;?>" required/>
 			</label>
 			<br>
-            <label class="lable"> <span>Email:</span><br>
-            <input type="text" class="input_text" name="email" value="<?php echo $Email;?>" required />
+            
+            <input type="text" class="input_text" name="email" placeholder="Email"value="<?php echo $Email;?>" required />
             </label>
 			<br>
-			<label class="lable"> <span>Password:</span><br>
-            <input type="password" class="input_text" name="password" value="<?php echo $Password;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required />
+			
+            <input type="password" class="input_text" placeholder="Password"name="password" value="<?php echo $Password;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required />
 			</label>
 			<br>
-			<label class="lable"> <span>Confirm Password</span><br>
-            <input type="password" class="input_text" name="confirmpassword" value="<?php echo $Confirmpassword;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number 
+			
+            <input type="password" class="input_text" name="confirmpassword" placeholder="Confirm password"value="<?php echo $Confirmpassword;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number 
 			and one uppercase and lowercase letter, and at least 8 or more characters" required />
 			<br>           
 			<input type="submit" name="submit" class="button" value="Register" /><br>
@@ -88,8 +90,16 @@
             </label>
 		</div>
           </div>
+</div>
         </form>
+
+</center>
 	</div>
+
+	<footer>
+
+	
+</footer>
 
 
 
