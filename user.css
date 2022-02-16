@@ -4,6 +4,9 @@ body{
     background-image: url('pic/pexels-photo-3184454.jpeg');
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+    
 }
 /*styling the header with background color*/
 .color1{
@@ -15,9 +18,15 @@ h1{
     text-size-adjust:inherit;
 }
 /*styling the footer for both signug and signin*/
-footer{
+.footer{
 
-    background-color: #0000;
+    background-color: black;
+    color:whitesmoke;
+    border-radius: 10px;
+    height:35%;
+
+    
+    
     
 
 }
