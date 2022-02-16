@@ -1,1 +1,3 @@
 # Auct_online_system
+This is an online auction system using the following stack --HTML--CSS--javscript--PHP--mysql
+Hello my fellow developer checkout on todays works...
