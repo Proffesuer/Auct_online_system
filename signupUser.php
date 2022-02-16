@@ -8,19 +8,41 @@
     
 </head>
 <body>
-<strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
+<strong><h1 align="center"class="color1">TECHNOMOBIZ</h1></strong>
+<center>
 
-<di class="bg3">
-    <form >
+    <form class="bg3">
+        <lable>
+            CREATE USER'S ACCOUNT
+</lable>
+<BR>
+<BR>
+        <lable>
+            First Name:
+</lable><br>
+<input type="text" name="fname"placeholder="First Name"required>
+<br>
+<lable>
+    Last Name:
+</lable><br>
+<input type="text"name="lname"placeholder="Last name">
+<br>
         <lable>
             Email:
-</lable>
+</lable><br>
 
 <input type="text" name="email"id="mail"placeholder="Enter email"required><br>
 <lable>
     Password:
-</lable>
+</lable><br>
 <input type="password"name="password"required placeholder="Password"><br>
+<lable>
+    Confirm Password:
+</lable>
+<br>
+<input type="password" name="password"required placeholder="Confirm Password">
+<br>
+<br>
 <input type="submit" name="submit" class="button" value="login" />
 
 
@@ -29,10 +51,14 @@
 
 
 
+</center>
 
 
-</div>
+<footer>
 
+
+
+</footer>
 
     
 </body>
