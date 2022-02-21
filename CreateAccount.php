@@ -77,7 +77,10 @@
             </label>
 			<br>
 			
-            <input type="password" class="input_text" placeholder="Password"name="password" value="<?php echo $Password;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required />
+            <input type="password" class="input_text" placeholder="Password"name="password" value="<?php echo $Password;?>"
+			 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+			 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+			 required />
 			</label>
 			<br>
 			
