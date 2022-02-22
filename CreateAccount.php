@@ -6,15 +6,21 @@
 <?php
 # my connect to online aauction system database; administrators table
 
+session_start();
+//initial variables
+
+
 	$host = "localhost";
 	$user = "root";
 	$pass = "";
-	$db = "online auction system";
+	$database = "online auction system";
+
+	//connect to database
 	
-	$con = mysqli_connect($host, $user, $pass, $db);
+	$db = mysqli_connect($host, $user, $pass, $database);
 
 	
-	if($con)
+	if($db)
 
 		echo"connected to web_sever";
 
@@ -23,17 +29,17 @@
 
 		//Register users; retrieving data from the form using php
 
-		$FirstName = /* mysqli_real_escape_string */ $_POST["FirstName"];
+		$FirstName = mysqli_real_escape_string($db, $_POST['firstname']); 
 
-		$SecondName = $_POST["SecondName"];
+		$SecondName =mysqli_real_escape_string($db, $_POST['SecondName']);
 		
-		$UserName = /* mysqli_real_escape_string($db, */ $_POST["UserName"];
+		$UserName = mysqli_real_escape_string($db, $_POST['UserName']);
 		
-		$Email =/* mysqli_real_escape_string($db, */ $_POST["Email"];
+		$Email =  mysqli_real_escape_string($db, $_POST['Email']);
 		
-		$Password_1 = /* mysqli_real_escape_string($db,  */$_POST["Password"];
+		$Password_1 = mysqli_real_escape_string($db, $_POST['Password']);
 		
-		$Password_2 = /* mysqli_real_escape_string($db, */ $_POST["ConfirmPassword"];
+		$Password_2 =  mysqli_real_escape_string($db, $_POST['ConfirmPassword']);
 
 
 		// Form validation statements
@@ -97,22 +103,22 @@
 		// Check existing user with the same user Name
 
 
-		$user_check_query = "SELECT * FROM db where UserName = '$UserName' or Email = ' $Email' limit = 1";
+		$user_check_query = "SELECT * FROM administrators where UserName = '$UserName' or Email = ' $Email' limit 1";
 
 		$results = mysqli_query($db, $user_check_query);
-		$administrators = msqli_fetch_assoc($result);
+		$user = msqli_fetch_assoc($results);
 
-		if($administrators)
+		if($user)
 		{
 
-		if($administrators['UserName'] === $UserName)
+		if($user['UserName'] === $UserName)
 
 		{
 
 			array_push($errors, "User Name already exist");
 		}
 
-		if($administrators['Email'] === $Email)
+		if($user['Email'] === $Email)
 		{
 
 			array_push($errors, "This email has already registered a user name");
@@ -131,15 +137,15 @@
 
 		$Password = md5($Password_1); # encrypts password
 
-	    $sql= " INSERT INTO administrators( Firstname, SecondName, UserName, Email, Password) VALUES = ('$FirstName', '$SeconName', '$UserName', '$Email', '$Password_1')";
+	    $query= " INSERT INTO administrators( Firstname, SecondName, UserName, Email, Password) VALUES = ('$FirstName', '$SeconName', '$UserName', '$Email', '$Password_1')";
 
-			  $query = mysqli_query($con, $sql);
+			   mysqli_query($db, $query);
 
 				$results = $mysqli_query($db, $query);{
 
 					if(mysqli_num_raws($results))
 
-					$_SESSION['FirstName'] = $FirstName;
+					$_SESSION[ 'FirstName'] = $FirstName;
 					$_SESSION['success'] = "LOGED IN";
 
 					#login page 
@@ -165,7 +171,7 @@
 
 /*
 
-
+sssss
 	
 
 			$Firstname=$Lastname=$Username=$Email=$Password=$Confirmpassword="";
@@ -219,34 +225,34 @@
 <strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
 <center>
 
-  <form method = "POST" actiom= "#CreateAccount.php id="back">
+  <form method = "POST" action= "#CreateAccount.php id="back">
 	<h4 align="center"style="color:white">CREATE ADMIN ACCOUNT</h4>
 
 	<div class="back">
     
-           <input type="text" class="input_text" name="fname" placeholder="First name"value="<?php echo $Firstname;?>" required/>
+           <input type="text" class="input_text" name="FirstName" placeholder="First name"value="<?php echo $FirstName;?>" required/>
             </label>
 			<br>
 			
 			
 
-            <input type="text" class="input_text" name="lname" placeholder="Last name"value="<?php echo $Lastname;?>" required />
+            <input type="text" class="input_text" name="SecondName" placeholder="Last name"value="<?php echo $SecondName;?>" required />
             </label>
 			<br>
            
-            <input type="text" class="input_text" name="username" placeholder="username or Id"value="<?php echo $Username;?>" required/>
+            <input type="text" class="input_text" name="UserName" placeholder="username or Id"value="<?php echo $UserName;?>" required/>
 			</label>
 			<br>
             
-            <input type="text" class="input_text" name="email" placeholder="Email"value="<?php echo $Email;?>" required />
+            <input type="text" class="input_text" name="Email" placeholder="Email"value="<?php echo $Email;?>" required />
             </label>
 			<br>
 			
-            <input type="password" class="input_text" placeholder="Password"name="password" value="<?php echo $Password;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required />
+            <input type="password" class="input_text" placeholder="Password"name="Password" value="<?php echo $Password;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required />
 			</label>
 			<br>
 			
-            <input type="password" class="input_text" name="confirmpassword" placeholder="Confirm password"value="<?php echo $Confirmpassword;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number 
+            <input type="password" class="input_text" name="ConfirmPassword" placeholder="Confirm password"value="<?php echo $ConfirmPassword;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number 
 			and one uppercase and lowercase letter, and at least 8 or more characters" required />
 			<br>           
 			<input type="submit" name="submit" class="button" value="Register" /><br>
