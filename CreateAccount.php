@@ -2,10 +2,172 @@
 
 
 
-    <?php
-    # include 'connect.php';
-?>
+
 <?php
+# my connect to online aauction system database; administrators table
+
+	$host = "localhost";
+	$user = "root";
+	$pass = "";
+	$db = "online auction system";
+	
+	$con = mysqli_connect($host, $user, $pass, $db);
+
+	
+	if($con)
+
+		echo"connected to web_sever";
+
+		else
+		echo"connection to web_server failed";
+
+		//Register users; retrieving data from the form using php
+
+		$FirstName = /* mysqli_real_escape_string */ $_POST["FirstName"];
+
+		$SecondName = $_POST["SecondName"];
+		
+		$UserName = /* mysqli_real_escape_string($db, */ $_POST["UserName"];
+		
+		$Email =/* mysqli_real_escape_string($db, */ $_POST["Email"];
+		
+		$Password_1 = /* mysqli_real_escape_string($db,  */$_POST["Password"];
+		
+		$Password_2 = /* mysqli_real_escape_string($db, */ $_POST["ConfirmPassword"];
+
+
+		// Form validation statements
+
+		$errors =  array();
+
+		if(empty($FirstName))
+
+		{
+			array_push($errors, "First Name required");
+
+		}
+
+		if(empty($SecondName))
+
+		{
+			array_push($errors, "Second Name required");
+		}
+
+
+		if(empty($UserName))
+
+		{
+			array_push($errors, "User Name required");
+		}
+
+
+		if(empty($Email))
+
+		{
+			array_push($errors, "Email required");
+		}
+
+
+		if(empty($Password_1))
+
+		{
+			array_push($errors, "Password is required");
+		}
+
+
+
+		if(empty($Password_2))
+
+		{
+			array_push($errors, "Confirm password is required");
+
+
+
+		}
+
+
+		if($Password_1 != $Password_2)
+		{
+
+			array_push($errors, "Password dont match");
+
+		}
+
+
+		// Check existing user with the same user Name
+
+
+		$user_check_query = "SELECT * FROM db where UserName = '$UserName' or Email = ' $Email' limit = 1";
+
+		$results = mysqli_query($db, $user_check_query);
+		$administrators = msqli_fetch_assoc($result);
+
+		if($administrators)
+		{
+
+		if($administrators['UserName'] === $UserName)
+
+		{
+
+			array_push($errors, "User Name already exist");
+		}
+
+		if($administrators['Email'] === $Email)
+		{
+
+			array_push($errors, "This email has already registered a user name");
+
+		}
+
+	}
+
+
+
+	//register the user if no errors and encrypt the passoword
+
+	if(count($errors) == 0)
+
+	{
+
+		$Password = md5($Password_1); # encrypts password
+
+	    $sql= " INSERT INTO administrators( Firstname, SecondName, UserName, Email, Password) VALUES = ('$FirstName', '$SeconName', '$UserName', '$Email', '$Password_1')";
+
+			  $query = mysqli_query($con, $sql);
+
+				$results = $mysqli_query($db, $query);{
+
+					if(mysqli_num_raws($results))
+
+					$_SESSION['FirstName'] = $FirstName;
+					$_SESSION['success'] = "LOGED IN";
+
+					#login page 
+
+					header('location: index.php');
+				}
+
+
+	}
+
+	if(count($errors) >=1)
+	{
+	foreach($errors as $output)
+	{
+		echo $output . "<br>";
+
+
+	}
+}
+
+
+#LEVIS CODE
+
+/*
+
+
+	
+
 			$Firstname=$Lastname=$Username=$Email=$Password=$Confirmpassword="";
 		if(isset($_REQUEST['submit']))
 {
@@ -31,11 +193,14 @@
 			//echo $Firstname.$Lastname.$Username.$Email.$Password.$passhash;
 			
 }
+
+// it ends heree...Levis code on php
+  
+   */
 ?>			
 
 
-
-
+<?php include("server.php"); ?>
 
 
 <html lang="en">
@@ -54,7 +219,7 @@
 <strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
 <center>
 
-  <form action="connect.php" method="post"id="back">
+  <form method = "POST" actiom= "#CreateAccount.php id="back">
 	<h4 align="center"style="color:white">CREATE ADMIN ACCOUNT</h4>
 
 	<div class="back">
@@ -98,9 +263,9 @@
 
 	<footer>
 
-	
-</footer>
 
+	
+   </footer>
 
 
 
