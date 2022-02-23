@@ -4,7 +4,7 @@
 
 
 <?php
-# my connect to online aauction system database; administrators table
+# my connect to online auction system database; administrators table
 
 session_start();
 //initial variables
