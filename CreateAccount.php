@@ -167,42 +167,6 @@ session_start();
 }
 
 
-#LEVIS CODE
-
-/*
-
-sssss
-	
-
-			$Firstname=$Lastname=$Username=$Email=$Password=$Confirmpassword="";
-		if(isset($_REQUEST['submit']))
-{
-			$Firstname=$_REQUEST['fname'];
-			$Lastname=$_REQUEST['lname'];
-			$Username=$_REQUEST['username'];
-			$Email=$_REQUEST['email'];
-			$Password=$_REQUEST['password'];
-			$Confirmpassword=$_REQUEST['confirmpassword'];
-			$passhash=crypt($Password);
-			
-			
-		   $insert=mysql_query("insert into account values('$Firstname', '$Lastname', '$Username','$Email', '$Password',1)") or die ("Error:".mysql_error());
-		if($insert)
-	{
-	
-		echo "Record inserted successfuly";
-    }
-	       
-				// insert user options
-		
-		
-			//echo $Firstname.$Lastname.$Username.$Email.$Password.$passhash;
-			
-}
-
-// it ends heree...Levis code on php
-  
-   */
 ?>			
 
 
@@ -248,14 +212,10 @@ sssss
             </label>
 			<br>
 			
-<<<<<<< HEAD
-            <input type="password" class="input_text" placeholder="Password"name="Password" value="<?php echo $Password;?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required />
-=======
             <input type="password" class="input_text" placeholder="Password"name="password" value="<?php echo $Password;?>"
 			 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
 			 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
 			 required />
->>>>>>> 11bae820a4358b91fb0ede7a60b7800cbe4ecf48
 			</label>
 			<br>
 			
