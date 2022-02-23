@@ -65,7 +65,6 @@
 
   }
   
-  /* Style the horizontal ruler */
 
   
   /* The Close Button (x) */
@@ -168,8 +167,8 @@ input[type=text],input[type=password], select, textarea {
     background-image: url('pic/pexels-anna-nekrashevich-8533267.jpg');
     background-size:cover;
     background-repeat: no-repeat;
-  
-     
+
+     background-attachment: fixed;
      
       border-radius: 15px;
 

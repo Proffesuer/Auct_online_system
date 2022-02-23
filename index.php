@@ -1,6 +1,7 @@
 <?php
 
 
+<<<<<<< HEAD
 session_start();
 
 if(isset($_SESSION['FirstName'])){
@@ -27,6 +28,12 @@ if(isset($_GET['logout'])){
 
 
 
+=======
+
+
+
+>
+>>>>>>> 11bae820a4358b91fb0ede7a60b7800cbe4ecf48
 
 <html lang="en">
 <head>
