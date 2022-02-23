@@ -84,7 +84,10 @@ unset($_SESSION['success']);
 
 <div>
 
-
+<h1>ANIMATES</h1>
+<div class="usebody">
+<h2 class="glow">WELCOME TO MY BESINESS <br> JOIN WITH US TODAY <br> WELCOME ALL</h2>
+</div>
 
 
 
