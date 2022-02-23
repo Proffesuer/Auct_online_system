@@ -46,6 +46,12 @@
     background-color: #474e5d;
     padding-top: 50px;
   }
+
+
+  .continer{
+    margin-left: 30%;
+
+  }
   
   /* Modal Content/Box */
   .modal-content {
@@ -98,7 +104,7 @@
 
 
 .lable{
-    margin-left:auto;
+    margin-left:20%;
     color:ivory;
     
 
@@ -109,9 +115,10 @@ input[type=text],input[type=password], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size-adjust: inherit;
-    margin-top: 6px;
+     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    resize: vertical; 
+    margin-left:20%; 
     
   }
   input[type=submit],input[type=button] {
@@ -121,6 +128,7 @@ input[type=text],input[type=password], select, textarea {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    
   
   }
   input[type=submit]:hover {
@@ -131,14 +139,30 @@ input[type=text],input[type=password], select, textarea {
     opacity:.8;
   }
   
-  footer{
+  .myfooter{
 
-    background-color: #000;
+    background-color: white;
     width: 100%;
-    width: auto;
-    height: 25%;
-    border-radius: 10px;
+    /* width: auto; ::: romed....it was conflicting wth the set width */ 
+    height: 20%;      /* height of the footer */
+    border-radius: 10px 10px 0px 0px;   /* curving the upper coners only */
+     margin-top:38%;   /* height from margin-top to where the footer starts */
+    color:black;
+    bottom:0;
+    overflow:hidden;
+	/* position:fixed; */
+   background-size:cover;
+  
+	  
   }
+
+/* styling tha footer * .....not neccessarily required */
+  #main{
+    height:1500px;
+    margin-top:25px;
+    padding:60px;
+    }
+  
   #back{
     background-image: url('pic/pexels-anna-nekrashevich-8533267.jpg');
     background-size:cover;
@@ -147,8 +171,29 @@ input[type=text],input[type=password], select, textarea {
      background-attachment: fixed;
      
       border-radius: 15px;
+
+    
       
   }
+    
+  
+  #backimg{
+    background-image: url('pic/pexels-anna-nekrashevich-8533267.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+  
+     
+     
+      border-radius: 15px;
+      height:100%;
+      
+  }
+  #height-bodypage{
+
+    height:1600pt;
+  }
+
   .login{
     
     color: white;
@@ -202,7 +247,22 @@ input[type=text],input[type=password], select, textarea {
   }
 
 
+  footer{
 
+    background-color: white;
+    width: 100%;
+    /* width: auto; ::: romed....it was conflicting wth the set width */ 
+    height: 40%;      /* height of the footer */
+    border-radius: 10px 10px 10px 10px;
+     margin-top:90%;   /* height from margin-top to where the footer starts */
+    color:black;
+    bottom:0;
+    overflow:hidden;
+	  /* position:fixed;  */
+
+  
+	  
+  }
 
 
 

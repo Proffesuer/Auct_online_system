@@ -21,7 +21,7 @@
 </title>
 
 </head>
-<body>
+<body id = "backimg">
 
   <strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
 
@@ -39,14 +39,24 @@
   
     <input type="text" placeholder="Enter Usermail" name="uname" required>
 
+    <br>
+
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <br>
       
 
       <input type="checkbox" checked="checked" name="remember"> Remember me 
+
     </label>
 
+    <br>
+      <br>
+
     <button type="submit">Login</button>
+
+    <br>
     <label>
 </div>
 
@@ -62,22 +72,47 @@
 
 </div>
 
-
+<br>
 
   <div class="container">
     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     <a href="CreateAccount.php"><button type="button"  class="cancelbtn">Create Account</button></a>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+
+    <br>
+    <br>
+    <br>
+    <span col= "4" class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
 </div>
-<footer>
+
+<div class = "myfooter">
+
+
+<p style = " Margin-left:15%;"> 
+<br>
+
+Welcome administrator!    feel free to login,     create account or update anything in the system as 
+an    Administrator..
+
+
+         <br>
+
+</p>
+
+
+<hr style = "color : red;"> <br>
+<p style = "font-size: 75%;"> .......c..f..y..  
+@DEVELOPER BEN_ALWANGE__&@DEVELOPER PROFESSEUR LEVIS CHISIRA
+<br>
+tel: +254768743827 mail- @gmail.com
+</P>
 
 
 
 
+</div>
 
-</footer>
 
 <script>
 // Get the modal
