@@ -1,6 +1,61 @@
 <?php
 
-include('server.php')
+if(isset($_POST['button']))
+{
+$UserMail = mysqli_real_escape_string($db, $_POST['UserMail']);
+
+$Password = mysqli_real_escape_string($db, $_POST['Password']);
+
+
+
+if(empty($UserMail))
+
+{
+  array_push($errors, "User email required");
+}
+
+
+
+if(empty($Password))
+
+{
+  array_push($errors, "Password is required");
+}
+
+
+if(count($errors) == 0)
+
+{
+
+$Password = md5($Password); # encrypts password
+
+$query = "SELECT *FROM administrators WHERE Email = '$UserMail' AND Password = '$Password' ";
+
+$results = $mysqli_query($db, $query);
+if(mysqli_num_rows($results)){
+
+
+  $_SESSION[ 'UserMail'] = $UserMail;
+  $_SESSION['success'] = "LOGED IN";
+
+      #login page
+
+      header('location: index.php');
+
+
+}
+}
+else{
+
+  array_push($errors, "Invalid UserMail and Password! Try again");
+
+
+}
+}
+
+
+?>
+
 
 
 
@@ -125,7 +180,7 @@ window.onclick = function(event) {
   }
 }
 </script>
-<script src="curtains.js"></script>
+
 <script>
 // JavaScript Document
 var prevScrollpos = window.pageYOffset;
@@ -139,35 +194,8 @@ if (prevScrollpos > currentScrollPos) {
 prevScrollpos = currentScrollPos;
 }
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
-  }
-}
-</script>
 <script src="curtains.js"></script>
-<script>
-// JavaScript Document
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-if (prevScrollpos > currentScrollPos) {
-  document.getElementById("navbar").style.top = "0";
-} else {
-  document.getElementById("navbar").style.top = "-50px";
-}
-prevScrollpos = currentScrollPos;
-}
-
-</script>
 
 </body>
 </html>
