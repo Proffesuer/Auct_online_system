@@ -163,4 +163,61 @@ session_start();
 
 
 
-		
+		//log in
+
+
+		if(isset($_POST['button']))
+		{
+		$UserMail = mysqli_real_escape_string($db, $_POST['UserMail']);
+
+		$Password = mysqli_real_escape_string($db, $_POST['Password']);
+
+
+
+		if(empty($UserMail))
+
+		{
+			array_push($errors, "User email required");
+		}
+
+
+
+		if(empty($Password))
+
+		{
+			array_push($errors, "Password is required");
+		}
+
+
+		if(count($errors) == 0)
+
+	{
+
+		$Password = md5($Password); # encrypts password
+
+		$query = "SELECT *FROM administrators WHERE Email = '$UserMail' AND Password = '$Password' ";
+
+		$results = $mysqli_query($db, $query);
+		if(mysqli_num_rows($results)){
+
+
+			$_SESSION[ 'UserMail'] = $UserMail;
+			$_SESSION['success'] = "LOGED IN";
+
+					#login page
+
+					header('location: index.php');
+
+
+		}
+	}
+		else{
+
+			array_push($errors, "Invalid UserMail and Password! Try again");
+
+
+		}
+	}
+
+
+?>
