@@ -1,8 +1,7 @@
 <?php
-
-
-
 session_start();
+
+include('server.php')
 
 if(isset($_SESSION['FirstName'])){
 
@@ -20,7 +19,6 @@ if(isset($_GET['logout'])){
 
 
 }
-
 
 
 ?>
@@ -64,12 +62,12 @@ unset($_SESSION['success']);
 
 
 </div>
-<?php endif ?>
+<?php  endif  ?>
 
 
 <?php if(isset($_SESSION['FirstName'])); : ?>
 
-     <h2> <strong> welcome <?php echo $_SESSION['FirstName'] ?> </strong></h2> 
+     <h2> <strong> welcome<?php   echo $_SESSION['FirstName'] ?> </strong></h2> 
 
      <button> <a href = "index.php?logout= '1'"</a></button>
      <?php endif ?>  

@@ -1,6 +1,6 @@
 <?php
 
-
+include('server.php')
 
 
 
@@ -30,19 +30,19 @@
 
 <div id="id01" class="modal">
 
-<form class="modal-content animate" action="#" method="post">
+<form class="modal-content animate" action="server.php" method="post">
 
 
   <div class="container">
     
-    <label for="uemail"><b>Usermail</b></label>
+    <label for="UserMail"><b>UserMail</b></label>
   
-    <input type="text" placeholder="Enter Usermail" name="uname" required>
+    <input type="text" placeholder="Enter Usermail" name="UserMail" required>
 
     <br>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="Password"><b>Password</b></label>
+    <input type="Password" placeholder="Enter Password" name="Password" required>
 
     <br>
       
@@ -54,7 +54,7 @@
     <br>
       <br>
 
-    <button type="submit">Login</button>
+    <button type="button">Login</button>
 
     <br>
     <label>
