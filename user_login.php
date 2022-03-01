@@ -15,8 +15,6 @@
 
 
 
-
-
 ?>
 
 
@@ -40,7 +38,7 @@
 <strong><h1 align="center"class="color1">TECHNOMOBIZ</h1></strong>
 <center>
 
-    <form class="bg3">
+    <form class="bg3" action="index.php"method="post">
         <lable>
             USER LOG IN
 </lable>
@@ -65,6 +63,11 @@
 
 </form>
 <br>
+
+
+
+
+
 
 
 </center>
