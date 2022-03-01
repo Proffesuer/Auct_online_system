@@ -1,7 +1,7 @@
 		
 <?php include('server.php') ?>
 
-
+<?php include('AdminErrors_File.php') ?>
 
 <html lang="en">
 <head>
@@ -19,26 +19,26 @@
 <strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
 <center>
 
-  <form method = "POST" action= "admin_login.php" id="back">
-  <?php include('AdminErrors_File.php') ?>
+  <form method = "POST" action= "CreateAccount.php" id="back">
+ 
   
 	<h4 align="center"style="color:white">CREATE ADMIN ACCOUNT</h4>
 
 	<div class="back">
 
 
-           <input type="text"  class="input_text" name="FirstName" placeholder="FirstName"value="<?php ?>" required/>
+           <input type="text"  class="input_text" name="FirstName" placeholder="FirstName"/>
 			<br>
 			
 
-            <input type="text" class="input_text" name="SecondName" placeholder="LastName"value="<?php ?>" />
+            <input type="text" class="input_text" name="SecondName" placeholder="LastName"/>
 			<br>
            
-            <input type="text" class="input_text" name="UserName" placeholder="UserName"value="<?php ?>"/>
+            <input type="text" class="input_text" name="UserName" placeholder="UserName"/>
 			</label>
 			<br>
             
-            <input type="text" class="input_text" name="Email" placeholder="Email"value="<?php ?>"/>
+            <input type="text" class="input_text" name="Email" placeholder="Email"/>
             </label>
 			<br>
 			
@@ -48,12 +48,15 @@
 			</label>
 			<br>
 			
-            <input type="password" class="input_text" name="ConfirmPassword" placeholder="Confirm password"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number 
+			<input type="password" class="input_text" name="ConfirmPassword" 
+			placeholder="Confirm password"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+			 title="Must contain at least one number 
 			and one uppercase and lowercase letter, and at least 8 or more characters" />
 			<br>           
-			<input type="submit" name="submit" class="button" value="Register" /><br>
+			<input type="submit" name="submit" class="button"/><br>
 		   <div class="login">
-		 <p><font color="#FFFF00"><b><h3>Already Registered Login?<a href="admin_login.php"></h3></b></font><input type="button" class="button" value="Login" /></a></p>
+		 <p><font color="#FFFF00"><b><h3>Already Registered Login?<a href="admin_login.php"></h3></b></font>
+		 <input type="button" class="button" value="Register" /></a></p>
             </label>
 		</div>
           </div>
