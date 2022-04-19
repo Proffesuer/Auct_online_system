@@ -11,10 +11,10 @@ session_start();
 	$errors =  array();
 
 	//connect to database
-	
+
 	$db = mysqli_connect('localhost', 'root', "", $database) or die ("Your connection to web server failed ");
 
-	
+
 	if($db)
 
 		echo"connected to web_sever";
@@ -23,7 +23,7 @@ session_start();
 		echo"connection to web_server failed";
 
 		// Register users; retrieving data from the form using 
-		
+
 		if(isset($_POST['submit'])){
 
 
@@ -31,13 +31,12 @@ session_start();
 		$FirstName =  mysqli_real_escape_string($db, $_POST['FirstName']); 
 
 		$SecondName =mysqli_real_escape_string($db, $_POST['SecondName']);
-		
+
 		$UserName = mysqli_real_escape_string($db, $_POST['UserName']);
-		
+
 		$Email =  mysqli_real_escape_string($db, $_POST['Email']);
-		
+
 		$Password_1 = mysqli_real_escape_string($db, $_POST['Password']);
-		
 		$Password_2 =  mysqli_real_escape_string($db, $_POST['ConfirmPassword']);
 
 		}
@@ -121,7 +120,7 @@ session_start();
 			array_push($errors, "User Name already exist");
 		}
 
-		if($result['Email'] === $Email)
+		if($result['Email'] === $Email);
 		{
 
 			array_push($errors, "This email has already registered a user name");
@@ -152,13 +151,17 @@ session_start();
 
 					#login page 
 
+<<<<<<< HEAD
 					header('location:index.php');
+=======
+					header('location: admin_login.php');
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 
 
 	}
 
 
-	
+
 }
 
 
@@ -169,10 +172,14 @@ session_start();
 		if(isset($_POST['UserMail']))
 		{
 		$UserMail = mysqli_real_escape_string($db, $_POST['UserMail']);
+<<<<<<< HEAD
 		
 		}
 		if(isset($_POST['Password']))
 		{
+=======
+
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 		$Password = mysqli_real_escape_string($db, $_POST['Password']);
 		}
 
@@ -212,7 +219,7 @@ session_start();
 			$_SESSION[ 'UserMail'] = $UserMail;
 			$_SESSION['success'] = "LOGED IN";
 
-					#login page 
+					#login page
 
 					header('location: index.php');
 		}			
@@ -226,7 +233,12 @@ session_start();
 
 
 		}
+<<<<<<< HEAD
 	
  
+=======
+	}
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 
-?>			
+
+?>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 include('server.php');
@@ -24,6 +25,8 @@ if(isset($_GET['logout'])){
 
 
 
+=======
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 
 
 <html lang="en">
@@ -38,32 +41,16 @@ if(isset($_GET['logout'])){
 
 <h1> HOME PAGE</h1>
 
-<?php
-
-
-if(isset($_SESSION['success'])) : ?>
-
-<div>
-
-<h2>
-
-
-<?php
-
-echo$_SESSION['success'];
-unset($_SESSION['success']);
-
-
-?>
 
 </h2>
 
 
 
 </div>
-<?php  endif  ?>
 
+     <h2> <strong> welcome</strong></h2> 
 
+<<<<<<< HEAD
 <?php if(isset($_SESSION['FirstName'])) : ?>
 
      <h2> <strong> welcome<?php   echo $_SESSION['FirstName'] ?> </strong></h2> 
@@ -71,6 +58,10 @@ unset($_SESSION['success']);
      <button> <a href = "index.php?logout= '1'" </a></button>
      <?php endif ?>  
 
+=======
+    
+<p> animate </p>
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 
 
 <div>
@@ -80,7 +71,7 @@ unset($_SESSION['success']);
 <h2 class="glow">WELCOME TO MY BUSINESS <br> JOIN WITH US TODAY <br> WELCOME ALL</h2>
 </div>
 
-
+<p>Hello guys welcome to home page</p>
 
 
 

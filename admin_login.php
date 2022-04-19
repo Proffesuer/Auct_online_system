@@ -1,26 +1,15 @@
-<?php
-
-include('server.php')
-
-
-
-
-?>
+<?php include('server.php') ?>
 
 
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel = "stylesheet" type = "text/css" href = "Admin.css">
-    <title>
-      Admin Log_in page
-</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin_login</title>
+  <link rel= "stylesheet" type= "text/css"  href= "admin_login.css" />
 </head>
+<<<<<<< HEAD
 <body id = "backimg">
 
   <strong><h1 align="center"class="colorr">TECHNOMOBIZ</h1></strong>
@@ -59,115 +48,37 @@ include('server.php')
     <br>
     <label>
 </div>
+=======
+<body>
+<center>
+  <div class="container"align="center">
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 
   
-    <div id =" Loginfailed" >
-
-
-
-          <p> invalid usermail and password! create account? </p>
-
-
-
-
-</div>
+  <lable>
+LOG IN
+</lable>
+<form method="POST"action= "admin_login.php">
 
 <br>
 
-  <div class="container">
-    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-    <a href="CreateAccount.php"><button type="button"  class="cancelbtn">Create Account</button></a>
+<lable>
+Email:
+</lable >
+<br><input type="text"name="Email"placeholder="Enter Email"required>
 
-    <br>
-    <br>
-    <br>
-    <span col= "4" class="psw">Forgot <a href="#">password?</a></span>
-  </div>
+<br><br>
+<lable>
+Password:
+</lable>
+<br>
+<input type="password"name="password"placeholder="Password"required>
+<br><br>
+<input type="submit" name="button"class="Button1"value="LOGIN" />
+
 </form>
 </div>
-
-<div class = "myfooter">
-
-
-<p style = " Margin-left:15%;"> 
-<br>
-
-Welcome administrator!    feel free to login,     create account or update anything in the system as 
-an    Administrator..
-
-
-         <br>
-
-</p>
-
-
-<hr style = "color : red;"> <br>
-<p style = "font-size: 75%;"> .......c..f..y..  
-@DEVELOPER BEN_ALWANGE__&@DEVELOPER PROFESSEUR LEVIS CHISIRA
-<br>
-tel: +254768743827 mail- @gmail.com
-</P>
-
-
-
-
-</div>
-
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
-  }
-}
-</script>
-<script src="curtains.js"></script>
-<script>
-// JavaScript Document
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-if (prevScrollpos > currentScrollPos) {
-  document.getElementById("navbar").style.top = "0";
-} else {
-  document.getElementById("navbar").style.top = "-50px";
-}
-prevScrollpos = currentScrollPos;
-}
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
-  }
-}
-</script>
-<script src="curtains.js"></script>
-<script>
-// JavaScript Document
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-if (prevScrollpos > currentScrollPos) {
-  document.getElementById("navbar").style.top = "0";
-} else {
-  document.getElementById("navbar").style.top = "-50px";
-}
-prevScrollpos = currentScrollPos;
-}
-
-</script>
+</center>
 
 </body>
 </html>
