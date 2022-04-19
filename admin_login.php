@@ -30,7 +30,7 @@ include('server.php')
 
 <div id="id01" class="modal">
 
-<form class="modal-content animate" action="server.php" method="post">
+<form class="modal-content animate" action="server.php" method="POST">
 
 
   <div class="container">
@@ -54,7 +54,7 @@ include('server.php')
     <br>
       <br>
 
-    <button type="button">Login</button>
+    <button type="submit">Login</button>
 
     <br>
     <label>
