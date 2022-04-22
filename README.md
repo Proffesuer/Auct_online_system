@@ -20,3 +20,14 @@ Hello my fellow developer checkout on todays works...
 #IT FEELS GOOD WORKING WITH YOU PROGRAMMER CHISIRA!!!------Thanks bro am humbled it feels good too working with you too you have made me improve largely---keep moving #DEV
 
 
+#hello Developer am adding up a new line in the index.html file to define the header
+
+-------------------------------------------------------------------------------------
+#NEW COMMENT @ TODAY 21ST APRIL 2022---NEW TASK @DEV.BENSON MAKOKHA
+--------------------------------------------------------------------------------
+#Hello bro do the following task:
+#1.work on a simple user interface that the user will interacting with anytime they login for Auctining items.Remember dont confuse between the index file and the user interface ..inde
+#file is the first file the user will interact with before logging in and after logging out.
+#2.use the file have just created today called User_inter.php .....#WeCanDoTHisThanEverBefore
+##Apologies::I am sorry for the late response am on my exams bro in one week time i will be done dont worry then trust me i will be on board again to make sure we are finishing our first
+#this year bro ...GOODEVENING AND I WILL BE FETCHING THE WORK TO SEE THE PROGRESS BRO. 
