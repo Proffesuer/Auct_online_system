@@ -27,35 +27,14 @@ if(isset($_GET['logout'])){
 
 
 <html lang="en">
-<head>
+<head>e
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet"href="Auct_style.css"type="text/css">
-<!--
-    <script type = "text/javascript">
-
-var ourFirstPage = require('./UserInterfaces.php')
-document.getElementById('firstpage').innerHTML = ourFirstPage.userInterface;
-
-    </script>
-
--->
 </head>
-
 <body>
-
-<div class = "firstpage">
-
-
-
-
-
-
-
-
-</div>
 
 <h1> HOME PAGE</h1>
 
@@ -103,6 +82,7 @@ It is an open platform,fell free anytime!!</h4>
 
 </div> 
 
-</body>
 
+</body>
 </html>
+

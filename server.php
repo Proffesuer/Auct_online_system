@@ -8,6 +8,7 @@ session_start();
 	$database = "online auction system";
 	$Email = "";
 	$FirstName = "";
+	$errors =  array();
 
 	//connect to database
 
@@ -42,8 +43,6 @@ session_start();
 		// Form validation statements
 
 		if(isset($_POST['submit'])){
-
-		$errors =  array();
 
 		if(empty($FirstName))
 
@@ -152,7 +151,11 @@ session_start();
 
 					#login page 
 
+<<<<<<< HEAD
+					header('location:index.php');
+=======
 					header('location: admin_login.php');
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 
 
 	}
@@ -163,15 +166,22 @@ session_start();
 
 
 
-		//log in
+		//ADMIN LOGIN CODE/SIGN IN CODE
 
 
-		if(isset($_POST['button']))
+		if(isset($_POST['UserMail']))
 		{
 		$UserMail = mysqli_real_escape_string($db, $_POST['UserMail']);
+<<<<<<< HEAD
+		
+		}
+		if(isset($_POST['Password']))
+		{
+=======
 
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 		$Password = mysqli_real_escape_string($db, $_POST['Password']);
-
+		}
 
 
 		if(empty($UserMail))
@@ -196,9 +206,14 @@ session_start();
 		$Password = md5($Password); # encrypts password
 
 		$query = "SELECT *FROM administrators WHERE Email = '$UserMail' AND Password = '$Password' ";
+		echo $UserMail;
 
-		$results = $mysqli_query($db, $query);
-		if(mysqli_num_rows($results)){
+		$results = mysqli_query($db, $query);
+
+		if(mysqli_num_rows($results))
+		{
+		
+			echo $UserMail;
 
 
 			$_SESSION[ 'UserMail'] = $UserMail;
@@ -207,9 +222,10 @@ session_start();
 					#login page
 
 					header('location: index.php');
+		}			
 
 
-		}
+		
 	}
 		else{
 
@@ -217,7 +233,12 @@ session_start();
 
 
 		}
+<<<<<<< HEAD
+	
+ 
+=======
 	}
+>>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 
 
 ?>
