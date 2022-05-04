@@ -1,0 +1,190 @@
+/*styling the all body with the background image*/
+
+body{
+    background-image: url('pic/pexels-photo-931887.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+    scroll-behavior: auto;
+    max-height:fit-content;
+    
+}
+/*styling the header with background color*/
+.color1{
+    background-color:#ff6347;
+    background-attachment: inherit;
+
+}
+h1{
+    text-size-adjust:inherit;
+
+}
+
+
+/* Styling for the links used in the webpage */
+
+/* a style to control the size of the links used */
+.mylinks{
+         font-size:35px;
+         color:blue;
+
+
+         
+}
+
+/* style for the behaviour of the links */
+
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+/*styling the footer for both signug and signin*/
+.myfooter{
+
+    background-color: #ffffff00;
+    color:black;
+    border-radius: 10px;
+    height:35%;
+
+    
+    
+    
+
+}
+
+/*styling the log in button in the signup form*/
+input[type=submit],input[type=button] {
+    background-color:tomato;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    
+    cursor: pointer;
+border-radius: 10px;
+  }
+
+
+  /* ANIMATION SITE STYLING */
+
+  /* Since its the first page to appear when our web is accessed anytime, our animation will best suit here, 
+      glowing texts to capture attention */
+
+
+      .usebody{
+        background-color:#ffffff49;
+        font-family:cursive;
+        font-size:300%; 
+        padding-top: 30px;
+        padding-bottom:60px;
+        padding-left:40px;
+        padding-right:40px;
+
+
+    }
+    .glow{
+         color:#ffff;
+         text-align:center;
+         -webkit-animation: glow 1s ease-in-out infinite alternate;
+         -moz-animation: glow 1s ease-in-out infinite alternate;
+         animation: glow 0.5s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow{
+        
+        from{
+            text-shadow:0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #e60073,
+            0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+     
+        to{
+            text-shadow: 0 0 20px #ffffff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+            0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+        }
+
+
+        /* styling for product or goods pics used in the page */
+
+        .item1{
+
+          padding-top:40px;
+          padding-bottom:40px;
+          padding-right:40px;
+          padding-left:40px;
+          background-size:contain;
+          background-color:#ffffff67;
+
+
+
+        }
+
+        .item2{
+          
+
+          padding-top:40px;
+          padding-bottom:40px;
+          padding-right:40px;
+          padding-left:40px;
+          background-size:cover;
+          background-color:#ffffff67;
+
+
+
+        }
+
+
+        .item3{
+          
+
+          padding-top:40px;
+          padding-bottom:40px;
+          padding-right:40px;
+          padding-left:40px;
+          background-size:contain;
+          background-color:#ffffff67;
+
+
+
+
+        }
+
+        .item4{
+
+          
+
+          padding-top:40px;
+          padding-bottom:40px;
+          padding-right:40px;
+          padding-left:40px;
+          background-size:contain;
+          background-color:#ffffff67;
+
+
+
+        }
+    
