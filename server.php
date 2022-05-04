@@ -121,7 +121,7 @@ session_start();
 			array_push($errors, "User Name already exist");
 		}
 
-		if($result['Email'] === $Email);
+		if($result['Email'] === $Email)
 		{
 
 			array_push($errors, "This email has already registered a user name");
