@@ -17,7 +17,7 @@
 <!--navigation bar with Drop Down menu-->
 
 <div class="navbar">
-  <a href="#home">HOME</a>
+  <a href="index.php">HOME</a>
   <a href="#news">CONTACT</a>
   <div class="dropdown">
     <button class="dropbtn">LOGIN </button>
@@ -33,51 +33,52 @@
 <div class="about">
 
 
-<br>
+hello guys this is about our team
 </div>
 </div>
 <div class="team">
+  
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="../w3images/team1.jpg" alt="Jane" style="width:100%">
+      <img src="pic/istockphoto-595158506-612x612.jpg"id="radius" alt="David Munyoki" style="width:100%">
       <div class="container">
-        <h2>Jane Doe</h2>
+        <h2>David Munyoki</h2>
         <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <p>He is a graduate of Bsc Computer science from <br>The Catholic University Of Eastern Africa <br>and the founder of E-SOKONI in 2022.</p>
+        <p><a href="mailto:munywoki1735@yahoo.com">munywoki1735@yahoo.com</a></p>
+        <p><button class="button">Contact:+25416333716</button></p>
       </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img src="../w3images/team2.jpg" alt="Mike" style="width:100%">
+      <img src="pic/team1.jpg" id="radius"alt="Metobo" style="width:100%">
       <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <h2>Mc Lucy Metobo</h2>
+        <p class="title">Marketing Director</p>
+        <p>He is the marketing Director in charge of<br> marketing.He is also the Director Of SmartTech <br>solutions.</p>
+        <p><a href="mailto:levischisira0@gmail.com">lucymetobo@gmail.com</a></p>
+        <p><button class="button">Contact:+25416333716</button></p>
       </div>
     </div>
   </div>
   
   <div class="column">
     <div class="card">
-      <img src="../w3images/team3.jpg" alt="John" style="width:100%">
+      <img src="pic/istockphoto-1320686253-170667a.jpg" alt="Benard Makokha" id="radius"style="width:100%">
       <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <h2>Benard Makokha</h2>
+        <p class="title">Sells Director</p>
+        <p>He is in charge of sells and buying done<br>over the system.He actions on any inquiries ,complains and helpneeded over the system.</p>
+        <p><a href="mailto:benardamakok@esokoni.co.ke">Benardmakokha@gmail.com</a></p>
+        <p><button class="button">Contact:+25416333716</button></p>
       </div>
     </div>
   </div>
 </div>
-  <br>
+
 </div>
 </div>
 <footer class="footer">
