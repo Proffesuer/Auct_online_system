@@ -7,7 +7,7 @@
 <link rel= "stylesheet" type= "text/css"  href= "home.css" />
 </head>
 <!--Body-->
-<body >
+<body>
 <!--animation at the topp of the home page-->
 <div class="back">
 <div class="usebody">
@@ -23,16 +23,74 @@
     <button class="dropbtn">LOGIN </button>
   </div> 
 </div>
-</div>
-<h3>Dropdown Menu inside a Navigation Bar</h3>
-<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
-<footer class="footer">
-hello guys this is my footer
 
+
+<video width="100%"autoplay muted loop id="myVideo">
+  <source src="video/Pexels Videos 2229907.mp4" type="video/mp4">
+</video>
+
+
+<div class="about">
+
+
+<br>
+</div>
+</div>
+<div class="team">
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <br>
+</div>
+</div>
+<footer class="footer">
+
+hello guys am chisira
+ <br><br>
+ and am really trying to work on the expected time on mtime
 
 
 
 </footer>
+
+
 
 
 
