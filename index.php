@@ -20,7 +20,9 @@
   <a href="index.php">HOME</a>
   <a href="#news">CONTACT</a>
   <div class="dropdown">
-    <button class="dropbtn">LOGIN </button>
+    
+   
+  <a href="user_login.php">LOGIN </a>
   </div> 
 </div>
 
@@ -31,13 +33,27 @@
 
 
 <div class="about">
-
+<center>
+    <bold>
+<h2>
+About Us
+</h2>
+</bold>
+</center>
+ 
 
 hello guys this is about our team
 </div>
 </div>
 <div class="team">
-  
+  <center>
+    <bold>
+<h2>
+Our Team
+</h2>
+</bold>
+</center>
+ 
 <div class="row">
   <div class="column">
     <div class="card">
