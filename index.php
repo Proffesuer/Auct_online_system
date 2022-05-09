@@ -63,7 +63,7 @@ Our Team
         <p class="title">CEO & Founder</p>
         <p>He is a graduate of Bsc Computer science from <br>The Catholic University Of Eastern Africa <br>and the founder of E-SOKONI in 2022.</p>
         <p><a href="mailto:munywoki1735@yahoo.com">munywoki1735@yahoo.com</a></p>
-        <p><button class="button">Contact:+25416333716</button></p>
+        <p><button class="button">Contact:+254716333716</button></p>
       </div>
     </div>
   </div>
