@@ -1,26 +1,3 @@
-<?php
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-
-
-
-
-
 
 <html lang="en">
 <head>
@@ -48,7 +25,7 @@
   <div class="dropdown">
     
    
-  <a href="user_login.php">LOGIN </a>
+  <a href="index.php">LOGOUT</a>
   </div> 
 </div>
 
