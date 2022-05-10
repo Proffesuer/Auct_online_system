@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interface</title>
     <link rel = "stylesheet" type= "text/css" href = "user_inter.css">
 
 
@@ -48,12 +48,44 @@
 
 
 <body>
-    
-<strong>
-    <h1> ONLINE AUCTION SYSTEM </h>
+<span>
 
-</strong>
+<div class="dropdown" id = "droping-positions">
+<button class="dropbtn">Post product</botton>
+<div class="dropdown-content">
+<a href="#link1">Electronics</a>
+<a href="#link2">House Holds</a>
+<a href="#link3">Clothes</a>
+<a href="#link4">Shoes</a>
+</div>
+</div>
+<div class= "dropdown">
+<button class= "dropbtn">View cart</button>
+<div class= "dropdown-content">
+<a href= "#name1">View added items</a>
+<a href= "#name2">Drop item(s)</a>
+<a href= "#name3">Clear Cart</a>
+</div>
+</div>
 
+<div class= "dropdown">
+<button class= "dropbtn">View products</button>
+<div class= "dropdown-content">
+<a href= "#country1">View currently posted</a>
+<a href= "#countr2"> View all</a>
+<a href= "#country3">Rate website</a>
+</div>
+</div>
+</span>
+
+<div class= "navbar">
+<a href= "index.php"target="_self">Home</a>
+</div>
+
+<div class= "myheight">
+
+<h1 style = "top:0%;"> ONLINE AUCTION SYSTEM </h1>
+</div>
 <h3> WE ENABLE YOU ADVERTISE YOUR PRODUCTS AND TRANSACT ONLINE </h3>
 
 <br>
