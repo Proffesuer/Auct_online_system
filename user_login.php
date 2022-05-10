@@ -1,26 +1,3 @@
-<?php
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-
-
-
-
-
 
 <html lang="en">
 <head>
@@ -29,13 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User log in page</title>
     <link type="text/css" href="user.css"rel="stylesheet">
+    <link type="text/css" href="home.css.css"rel="stylesheet">
     
 </head>
 <body>
 
 
 
-<strong><h1 align="center"class="color1">TECHNOMOBIZ</h1></strong>
+<div class="back">
+<div class="usebody">
+<h2 class="glow">WELCOME TO E-SOKONI<br> WELCOME ALL!!</h2>
+</div>
+
+
+<div class="navbar">
+  <a href="index.php">HOME</a>
+  <a href="#news">CONTACT</a>
+  <div class="dropdown">
+    
+   
+  <a href="index.php">LOGOUT</a>
+  </div> 
+</div>
+
+<br><br>
 <center>
 
     <form class="bg3" action="index.php"method="post">

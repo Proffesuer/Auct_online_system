@@ -120,7 +120,7 @@ session_start();
 			array_push($errors, "User Name already exist");
 		}
 
-		if($result['Email'] === $Email);
+		if($result['Email'] === $Email)
 		{
 
 			array_push($errors, "This email has already registered a user name");
@@ -151,8 +151,14 @@ session_start();
 /*New changes From Resipo
 					#login page */
 
+<<<<<<< HEAD
 					header('location:index.php');
 					header('location: admin_login.php');
+=======
+					#login page 
+
+					header('location:index.php');
+>>>>>>> bb29a865310eecd23475e2a3e8ae0e2e0bccae26
 
 
 				
@@ -174,7 +180,10 @@ session_start();
 		}
 		if(isset($_POST['Password']))
 		{
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb29a865310eecd23475e2a3e8ae0e2e0bccae26
 		$Password = mysqli_real_escape_string($db, $_POST['Password']);
 		}
 
@@ -230,7 +239,10 @@ session_start();
 		}
 	
  
+<<<<<<< HEAD
 	
+=======
+>>>>>>> bb29a865310eecd23475e2a3e8ae0e2e0bccae26
 
 
 ?>
