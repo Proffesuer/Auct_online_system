@@ -148,16 +148,14 @@ session_start();
 
 					$_SESSION[ 'FirstName'] = $FirstName;
 					$_SESSION['success'] = "LOGED IN";
+/*New changes From Resipo
+					#login page */
 
-					#login page 
-
-<<<<<<< HEAD
 					header('location:index.php');
-=======
 					header('location: admin_login.php');
->>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 
 
+				
 	}
 
 
@@ -172,14 +170,11 @@ session_start();
 		if(isset($_POST['UserMail']))
 		{
 		$UserMail = mysqli_real_escape_string($db, $_POST['UserMail']);
-<<<<<<< HEAD
 		
 		}
 		if(isset($_POST['Password']))
 		{
-=======
 
->>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
 		$Password = mysqli_real_escape_string($db, $_POST['Password']);
 		}
 
@@ -233,12 +228,9 @@ session_start();
 
 
 		}
-<<<<<<< HEAD
 	
  
-=======
-	}
->>>>>>> fa43d583d5813d8b05423305f1aa404dcf96fd50
+	
 
 
 ?>
