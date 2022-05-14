@@ -31,3 +31,8 @@ Hello my fellow developer checkout on todays works...
 #2.use the file have just created today called User_inter.php .....#WeCanDoTHisThanEverBefore
 ##Apologies::I am sorry for the late response am on my exams bro in one week time i will be done dont worry then trust me i will be on board again to make sure we are finishing our first
 #this year bro ...GOODEVENING AND I WILL BE FETCHING THE WORK TO SEE THE PROGRESS BRO. 
+
+
+#helloo brooo,,
+ i have already written javascript code for search bar but still fixing the bugs the code will be welll
+ 
