@@ -177,11 +177,9 @@ border-radius: 10px;
 
           
 
-          padding-top:40px;
-          padding-bottom:40px;
-          padding-right:40px;
-          padding-left:40px;
-          background-size:contain;
+          margin-top:5px;
+          margin-bottom:4px;
+          margin-left:10%;
           background-color:#ffffff67;
 
 
@@ -194,7 +192,7 @@ border-radius: 10px;
 .dropbtn{
 	background-color:red;
 	color:white;
-	padding:20px;
+	padding:35px;
 	font-size:100%;
 	border:2px solid black;
 	text-align:center;
@@ -210,13 +208,13 @@ border-radius: 10px;
 	display:none;
 	position:absolute;
 	background-color:f1f1f1;
-	min-width:100px;
+	min-width:150px;
 	box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
 	z-index:1;
 }
 .dropdown-content a{
 	color:black;
-	padding:20px;
+	padding:30px;
 	display:block;
 	text-decoration:none;
 }
@@ -232,10 +230,10 @@ border-radius: 10px;
 }
 #droping-positions{
 
-  padding-left:64%;
-  padding-right:1px;
-  padding-top:0%;
-  padding-bottom:0%;
+  margin-left:30%;
+  margin-right:1px;
+  margin-top:0%;
+  margin-bottom:0%;
 
 }
   .myheight{
@@ -270,4 +268,160 @@ border-radius: 10px;
 .navbar a:hover{
 background-color:rgba(120,120,120,0.2);
 color:rgba(70,70,70,0.2);
+}
+
+/*styling for user Uploads page */
+.myuploads{
+
+  margin-left:5%;
+  
+  
+
+}
+
+.spaning-image{
+
+  margin-left:35%;
+}
+
+
+.column {
+  float:right;
+  width: 63%;
+  margin-top:0%;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.view-button{
+  padding: 3px 3px 5px 5px;
+  background-color:green;
+  font-size:30px;
+  border-radius:2px 2px 2px 2px;
+}
+
+
+/* Styling for search bar */
+
+@import url('https://fonts.googleapis.com/css2?family=poppins');
+*{
+margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'poppins' , sans-serif;
+
+}
+
+
+.wrapper{
+  max-width: 450px;
+  margin:150px auto;
+
+
+}
+
+.search-input{
+  position: relative;
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+
+}
+
+ input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size:60px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0,0.1);
+
+
+}
+
+ .icon{
+
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 20px;
+  color:blue;
+  cursor:pointer;
+
+
+}
+
+                                                                   
+.autocome-box{
+ /* padding: 10px 8px;   add wen editing  */
+ padding : 0px;
+  max-height: 280px;
+  overflow-y: auto;
+  opacity: 0;      /* comment it to make box visible for edit */
+  pointer-events: none;  /* comment it to make box visible for edit */ 
+   
+
+}
+
+.active{
+
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.outocome-box li{
+
+  list-style : none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  display: none;
+}
+
+.search-input.active .autocome-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+li{
+  list-style: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius:3px;
+  display: none; /* comment it to make box visible for edit  */
+
+}
+
+
+.search-input.active.autocome-box li{
+display: block;
+
+}
+
+
+ li:hover{
+  background: #efefef0e;
+
 }

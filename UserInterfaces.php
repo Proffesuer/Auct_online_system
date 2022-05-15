@@ -1,6 +1,50 @@
 <?php
 
+if(isset($_POST['submit'])){
+    $file = $_FILES['file'];
+    $fileName = $_FILES['file']['name'];
+    $fileTmpName = $_FILES['file']['tmp_name'];
+    $fileSize = $_FILES['file']['size'];
+    $fileError= $_FILES['file']['error'];
+    $fileType = $_FILES['file']['type'];
 
+    $fileExt = explode('.',$fileName);
+    $fileActualExt = strtolower(end($fileExt));
+    $allowed = array('jpg', 'jpeg', 'png', 'pdf');
+
+    if(in_array($fileActualExt, $allowed)){
+
+        if($fileError === 0){
+            #
+
+            if($fileSize < 200000){
+
+                $fileDestination = 'electronicUploads/'.$fileActualExt;
+
+                move_uploaded_file($fileTmpName, $fileDestination);
+                echo($fileDestination);
+
+            }
+
+            else{
+                echo("Your File Is Too Big!");
+            }
+
+
+        }
+        else{
+            echo("There was an error in uploading your file!");
+        }
+
+
+    }
+    else{
+    echo("you can not upload files of this type!");
+
+    }
+
+
+}
 
 
 
@@ -40,6 +84,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interface</title>
     <link rel = "stylesheet" type= "text/css" href = "user_inter.css">
+    <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
 
 
 
@@ -53,10 +98,10 @@
 <div class="dropdown" id = "droping-positions">
 <button class="dropbtn">Post product</botton>
 <div class="dropdown-content">
-<a href="#link1">Electronics</a>
-<a href="#link2">House Holds</a>
-<a href="#link3">Clothes</a>
-<a href="#link4">Shoes</a>
+<a href="user_uploads.php">Upload product</a>
+<a href="user_uploads.php">View  post</a>
+<a href="user_uploads.php">Delete post</a>
+
 </div>
 </div>
 <div class= "dropdown">
@@ -101,11 +146,8 @@
 </p>
 </div>
 </div>
-
-
-<div class= "item1">
-
-<img src = "/pic/phones" alt = "mobile phone" width = "0 " height = "0 " >
+<div class= "item1" id = "liks">
+  <img src="pic/laptop-image.jpg"id="radius" alt="David Munyoki" width = " " height = " "> 
 
 </div>
 
@@ -114,7 +156,7 @@
 
 
 
-<img src = "phones.jpg" alt = "mobile phone" width = " " height = " " >
+<img src = "pic/machines.jpg" alt = "mobile phone" width = " " height = " " >
 
 
 
@@ -125,7 +167,7 @@
 
 
 
-<img src = "phones.jpg" alt = "mobile phone" width = " " height = " " >
+<img src = "pic/coffee-cups.jpg" alt = "mobile phone"  >
 
 
 
@@ -135,7 +177,7 @@
 <div class = "item4">
     
 
-<img src = "phones.jpg" alt = "mobile phone" width = " " height = " " >
+<img src = "pic/phones.jpg" alt = "mobile phone" width = " " height = " " >
 
 
 
@@ -144,10 +186,36 @@
 
 
 <div class = "mylinks">
-        <a href = "index.php" target = "_blank" title = "Online Auction System">login? </a>
+        <a href = "index.php" target = "_blank" title = "Online Auction System">admin login? </a>
             <br>
         <a href = "index.php" target= "_blank" title = "Online Auction System">click here to create account </a>
         <br>
+</div>
+
+<div class="wrapper">
+
+<div class="search-input" class = "active">
+
+<input type = "text" placeholder = "Type to Search products...">
+<div class="active" class = "outocome-box">
+<div class="autocome-box">
+
+<li>search form </li>
+
+<li>search form </li>
+
+<li>search form </li>
+
+<li>search form </li>
+
+<li>search form </li>
+
+</div>
+</div>
+<div class="icon"> <i class = "fas fa-search"></i></div>
+
+
+</div>
 </div>
 
 
@@ -164,13 +232,7 @@ Developper Ben-Alwanga&Levis Chisira, c- Tel +25468743827   Nairobi. <span> Emai
 
 
 
-<script type= "text/javascript">
-    exports.userInterface = function firstPageAlways()
-    {
-    const container;
-    document.getElementById('loadEveryTime') = container;
-window.addeventlistener('load,container')
-    }
+<script src = "javascript.js">
 
     </script>
 </body>

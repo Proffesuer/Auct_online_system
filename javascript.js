@@ -41,14 +41,21 @@ inputBox.onkeyup = (e) =>{
 
 
         });
+
+        if(emptyArray=== undefined){
+
+            let emptyArray = [];
         
 
         emptyArray = array.map(()=>{
 
             return dat = '<li>'+ data + '</li>';
-        });
+            
+        
+        } );
+    }
 
-        console.log(emptyArray);
+        console.log(emptyArray );
         searchWrapper.classList.add('active'); //show autocomplete box 
         showSuggestions(emptyArray);
 
@@ -56,6 +63,8 @@ inputBox.onkeyup = (e) =>{
         for(let i = 0; i < allList.length; i++){
             //adding onclick attribute in all tags
             allList[i].setAttribute("onclick", "select(this)");
+
+            
 
         }
     }
@@ -85,7 +94,7 @@ function showSuggestions(list){
 
     if(!list.length){
         userValue = inputBox.value;
-        listData = '<li>' + userValue + '</li>';
+        listData = '<li>' + userValue + '<br>' + '</li>';
 
 
     }
@@ -94,7 +103,7 @@ function showSuggestions(list){
 
     }
 
-    suggBox.innerHTML =listData;
+    suggBox.innerHTML =listData + "<br>";
 
 }
 
