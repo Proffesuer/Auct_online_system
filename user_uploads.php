@@ -103,7 +103,7 @@
 <div class = "myuploads"><h1>SHOES</h1>
 
 <form action =" UserInterfaces.php" method = "POST" enctype = "multipart/form-data" >
-    <input type= "file" name = "file">
+    <input type= "file" name = "file" id = "input-image">
     
     <button type = "submit" name = "submit"> Upload your Product </button>
 
@@ -136,7 +136,8 @@
 
 
 
-
+<script type = "text/javascript" src  = "javascript.js"> 
+jj</script>
     
 </body>
 </html>

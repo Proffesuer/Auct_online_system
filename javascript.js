@@ -18,11 +18,11 @@ let suggestions = [
 ];
 
 
-
+/*
 
 // Getting all required elements
 const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
+//const inputBox = document.querySelector("#input");
 const suggBox = searchWrapper.querySelector(".autocome-box");
 let emptyArray = [];
 
@@ -106,6 +106,24 @@ function showSuggestions(list){
     suggBox.innerHTML =listData + "<br>";
 
 }
+*/
+
+// viewing images/Items on webpage from the root folder
+
+var imageInput = document.querySelector("#file");
+var uploadedImage = "";
+imageInput.addEventListener("change", function(){
+
+    const reader = new FileReader();
+    reader.addEventListener("submit", () =>{
+        uploadedImage = reader.result;
+
+        document.querySelector("#display-image").style.backgroundImage = `url(${uploadedImage})`;
+    
+    });
+    reader.readAsDataURL(this.files[0]);
+});
+
 
 
 

@@ -22,11 +22,12 @@ if(isset($_POST['submit'])){
                 $fileDestination = 'electronicUploads/'.$fileActualExt;
 
                 move_uploaded_file($fileTmpName, $fileDestination);
-                echo($fileDestination);
+                //echo($fileDestination);
 
             }
 
             else{
+                
                 echo("Your File Is Too Big!");
             }
 
@@ -85,6 +86,17 @@ if(isset($_POST['submit'])){
     <title>Interface</title>
     <link rel = "stylesheet" type= "text/css" href = "user_inter.css">
     <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src = "javascript.js"></script>
+    <script src = "jquery-3.6.0.js"></script>
+    <script src = "w3.js"></script>
+
+    <style>
+
+        body{
+            background-color:#ffffff;
+        }
+
+        </style>
 
 
 
@@ -92,7 +104,7 @@ if(isset($_POST['submit'])){
 
 
 
-<body>
+<body style = "background-color:white;">
 <span>
 
 <div class="dropdown" id = "droping-positions">
@@ -146,8 +158,43 @@ if(isset($_POST['submit'])){
 </p>
 </div>
 </div>
+<br>
+ <div class = "my-fontsize">
+<h2>  Uploaded products on a website, <br> hurry and make a purchase at an offordable prices </h2>
+    </div>
+
+<div class="mations">
+     <div id = " sliding">
+        
+        <img class = "slides"  src = "pic/laptop-image.jpg" >
+         <img class = "slides"  src = "pic/pexels-photo-3184454.jpeg" >
+         <img class = "slides"  src = "pic/phones.jpg" >
+         <img class = "slides"  src = "pic/machines.jpg" >
+            
+          </div>
+
+</div>
+
+<div class = "character">
+
+<button class ="clickable-button">
+    <strong>
+         Click On Item To Purchase
+    </strong>
+        </button>
+
+
+
+    </div>
+       
+
+
 <div class= "item1" id = "liks">
   <img src="pic/laptop-image.jpg"id="radius" alt="David Munyoki" width = " " height = " "> 
+  <br>
+      <button class = "price-button" >
+          <strong>Sells @Ksh30,000.00 </strong>
+        </button>
 
 </div>
 
@@ -157,46 +204,55 @@ if(isset($_POST['submit'])){
 
 
 <img src = "pic/machines.jpg" alt = "mobile phone" width = " " height = " " >
+<br>
+<button class= "price-button">
+    <strong>Sells @Ksh45,000.00</strong>
 
+    </button>
 
-
+    
 </div>
 
 
 <div class = "item3">
 
 
-
 <img src = "pic/coffee-cups.jpg" alt = "mobile phone"  >
 
+<button class = "price-button">
+    <strong>Sells @ksh1000.00</strong>
 
+    </button>
 
 </div>
 
 
 <div class = "item4">
     
-
 <img src = "pic/phones.jpg" alt = "mobile phone" width = " " height = " " >
 
+<br>
+<button class = "price-button">
+    <strong>Sells @$2.00</strong>
 
+    </button>
 
 </div>
 
 
+<div class="item3" id = "display-image">
 
-<div class = "mylinks">
-        <a href = "index.php" target = "_blank" title = "Online Auction System">admin login? </a>
-            <br>
-        <a href = "index.php" target= "_blank" title = "Online Auction System">click here to create account </a>
-        <br>
+<p>this is my pic </p>
+
 </div>
+
+
 
 <div class="wrapper">
 
 <div class="search-input" class = "active">
 
-<input type = "text" placeholder = "Type to Search products...">
+<input type = "text" placeholder = "Type to Search products..." value = "" id = "input">
 <div class="active" class = "outocome-box">
 <div class="autocome-box">
 
@@ -219,6 +275,16 @@ if(isset($_POST['submit'])){
 </div>
 
 
+
+
+<div class = "mylinks">
+        <a href = "index.php" target = "_blank" title = "Online Auction System">admin login? </a>
+            <br>
+        <a href = "index.php" target= "_blank" title = "Online Auction System">click here to create account </a>
+        <br>
+</div>
+
+
 <div class = "myfooter">
 
 <p style = "padding-left:130px;">
@@ -232,7 +298,17 @@ Developper Ben-Alwanga&Levis Chisira, c- Tel +25468743827   Nairobi. <span> Emai
 
 
 
-<script src = "javascript.js">
+<script  >
+
+$(document).ready(function(){
+            $(".slides")
+        })
+
+    </script>
+
+    <script>
+
+        w3.slideshow(".slides", 4000);
 
     </script>
 </body>
