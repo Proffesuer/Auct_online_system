@@ -1,13 +1,17 @@
 /*styling the all body with the background image*/
 
 body{
-    background-image: url('pic/pexels-photo-931887.jpeg');
+  /*
+    background-image: url('pic/pexels-photo-931887.jpeg');   */
+    background-color:#ffffff;
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: fixed;
     scroll-behavior: auto;
     max-height:fit-content;
+    margin-left: 1%;
+    margin-right: 2%;
     
 }
 /*styling the header with background color*/
@@ -196,11 +200,13 @@ border-radius: 10px;
 	font-size:100%;
 	border:2px solid black;
 	text-align:center;
+  display:block;
 }
 .dropdown{
 	position:relative;
 	display:inline-block;
   top:0%;
+  resize:unset;
   
 }
 .dropdown-content{
@@ -230,7 +236,7 @@ border-radius: 10px;
 }
 #droping-positions{
 
-  margin-left:30%;
+  margin-left:45%;
   margin-right:1px;
   margin-top:0%;
   margin-bottom:0%;
@@ -346,7 +352,7 @@ margin: 0;
   border: none;
   border-radius: 5px;
   padding: 0 60px 0 20px;
-  font-size:60px;
+  font-size:30px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0,0.1);
 
 
@@ -424,4 +430,86 @@ display: block;
  li:hover{
   background: #efefef0e;
 
+}
+
+/* Styling for box that carries the animating pics */
+.mations{
+  margin-bottom: 0.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color:rgba(255, 255, 255, 0.144);
+  padding: 20% 25% 20% 20%;
+  display:block;
+  height:fit-content;
+}
+
+#sliding{
+
+  
+  margin-left: 10%;
+  margin-right: 10%;
+  display:block;
+  padding: 40% 40% 40% 40%;
+  float:left;
+
+}
+.item1{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align:center;
+}
+
+.item2{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align:center;
+}
+
+.item3{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.item4{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align:center;
+
+}
+
+.price-button{
+  padding:15px;
+  background-color:grey;
+  border-radius: 4px;
+  font-size:90%;
+}
+
+.my-fontsize{
+  font-size:150%;
+  margin-left: 70px;
+
+}
+.character{
+  text-align:center;
+  font-size: 110%;
+  padding:15px;
+  border-radius:4px;
+  background-color:green;
+
+}
+
+.clickable-button{
+  outline:none;
+  font-size:90%;
+  background-color:green;
+  padding:10px;
 }
