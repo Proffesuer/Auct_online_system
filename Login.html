@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Login Form</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  
+    
+</head>
+<body>
+ 
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form id="login">
+        <h3>Login To E-SOKONI</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email" name="email">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" name="password">
+        <a href="forgotpass.html">Forgot password? Sign</a>
+
+        <button id="loginBtn">Log In</button>
+        <button style="margin-top:15px" id="googleBtn">Sign in with Google</button>
+        <a href="register.html">New user? Sign up</a>
+    </form>
+
+      <!-- The core Firebase JS SDK is  always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+   // Your web app's Firebase configuration
+   const firebaseConfig = {
+    apiKey: "AIzaSyCQ99VlyRBQF_RWZarDAv60pCTOFijPtlM",
+    authDomain: "avenger1-a0f67.firebaseapp.com",
+    projectId: "avenger1-a0f67",
+    storageBucket: "avenger1-a0f67.appspot.com",
+    messagingSenderId: "866396222062",
+    appId: "1:866396222062:web:f94a7c506a94ec14856c7f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <script src = "js/log.js"> </script>
+</body>
+</html>

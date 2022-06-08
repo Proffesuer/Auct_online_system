@@ -17,14 +17,15 @@
 
 <div class="navbar">
   <a href="index.php">HOME</a>
-  <a href="#news">CONTACT</a>
+  <a href="contact.html">CONTACT</a>
   <div class="dropdown">
     
    
-  <a href="user_login.php">LOGIN </a>
+  <a href="login.html">LOGIN </a>
   </div> 
 </div>
 
+<!--the auto play video under  the navigation bar -->
 
 <video width="100%"autoplay muted loop id="myVideo">
   <source src="video/Pexels Videos 2229907.mp4" type="video/mp4">
@@ -119,26 +120,37 @@ Our Team
 
 <tr>
   <td>
+    <a href="index.php">
     HOME
+    </a>
+</a>
 </td>
 <td>
+<a href="login.html">
   LOGIN
+  </a>
 </td>
 <td>
+<a href="register.html">
 SIGNUP
+</a>
 </td>
 
 </tr>
 <td>
+<a href="login.html">
   ORDER
+  </a>
 </td>
 <td>
-
+<a href="contact.html">
 CONTACT
+</a>
 </td>
 <td>
+<a href="admin_login.php">
   ADMIN
- 
+</a>
 </td>
 
   </tr>
