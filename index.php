@@ -3,8 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<link rel= "stylesheet" type= "text/css"  href= "home.css" />
+<link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <!--Body-->
 <body>
@@ -39,10 +38,27 @@
 About Us
 </h2>
 </bold>
-</center>
+
  
 
-hello guys this is about our team
+<p>Launched in 2022, <b>E-SOKONI </b>is a <b>virtual</b> office that creates that nice impression 
+on the ready market to serve everyone efficiently whatever you want all over Kenya -remotely.
+
+ With focus on buying and selling product efficiently over internet,we believe in customers needs all over from Electonics,
+ Top-Fashion,Machineries to furnitures.
+</p>
+
+<p>
+  E-Sokoni is commited to quility
+   services with fifteen offices within five counties and three regions in Kenya ;Eldoret ,Kisumu,Nairobi and Nakuru City with our main offices and stores located in the Capital city Nairobi.
+   We also have diffferent transport companies as our partners to trasport the items or order to the intended destination example G4S,NorthRift ,and 
+   RoyalRift to whom we are garanteed safety.
+</p>
+<p>
+  Service full of <b>Integrity,Transparent and Honest</b> is what we believe in as a Company.
+</p>
+<br>
+<br>
 </div>
 </div>
 <div class="team">
@@ -98,12 +114,39 @@ Our Team
 </div>
 </div>
 <footer class="footer">
+<b>
+<table cellpadding="15px">
 
-hello guys this is the latest version of this project and i want munyoki to check out on it.....
- <br><br>
- and am really trying to work on the expected time on mtime
+<tr>
+  <td>
+    HOME
+</td>
+<td>
+  LOGIN
+</td>
+<td>
+SIGNUP
+</td>
+
+</tr>
+<td>
+  ORDER
+</td>
+<td>
+
+CONTACT
+</td>
+<td>
+  ADMIN
+ 
+</td>
+
+  </tr>
+  
 
 
+</table>
+</b>
 
 </footer>
 
