@@ -74,7 +74,7 @@ Our Team
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="pic/istockphoto-595158506-612x612.jpg"id="radius" alt="David Munyoki" style="width:100%">
+      <img src="pic/istockphoto-595158506-612x612.PNG "id="radius" alt="David Munyoki" style="width:100%">
       <div class="container">
         <h2>David Munyoki</h2>
         <p class="title">CEO & Founder</p>

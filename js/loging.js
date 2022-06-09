@@ -18,7 +18,7 @@ function loginUser(e) {
         .then(() => {
             alert('Login successful, redirecting...');
             // redirect back to login page
-            window.location.assign('admin/home.php');
+            window.location.assign('home.php');
         })
        .catch(err => alert(err.message));
 }
@@ -51,7 +51,7 @@ function signInWithGoogle() {
     firebase.auth().signInWithPopup(googleProvider)
         .then(() => {
             // redirect to home page
-            window.location.assign('admin/home.php');
+            window.location.assign('home.php');
         })
         .catch(err => alert(err.message))
 }

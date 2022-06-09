@@ -4,15 +4,7 @@ error_reporting(1);
 session_start();
 extract($_REQUEST);
 $name=$_SESSION['eid'];
-if($_REQUEST['log']=='out')
-{
-session_destroy();
-header("location:index.php");
-}
-else if($name=="")
-{
-header("location:index.php");
-}
+
 ?>
 <html>
 <head>
@@ -35,11 +27,11 @@ a:hover{background-color:#FFFFFF}
 
 <div class="navbar">
   <a href="index.php">HOME</a>
-  <a href="contact.html">CONTACT</a>
+
   <div class="dropdown">
     
    
-  <a href="login.html">LOGIN </a>
+  <a href="index.php">LOGOUT </a>
   </div> 
 </div>
 <br><br>
@@ -74,8 +66,7 @@ onBlur=
 
   <div style="width:50%;height:10%;float:right">
 <br /><br /><br /><br/>
-    <a href="?con=hm"><font color="#660066" size="+2">Home</font></a>&nbsp;&nbsp;&nbsp;&nbsp; 
-	<a href="?log=out"><font color="#660066" size="+2">LogOut</font></a>
+   
   </div>
 </div>
 </div>
