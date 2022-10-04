@@ -33,6 +33,4 @@ Hello my fellow developer checkout on todays works...
 #this year bro ...GOODEVENING AND I WILL BE FETCHING THE WORK TO SEE THE PROGRESS BRO. 
 
 
-#helloo brooo,,
- i have already written javascript code for search bar but still fixing the bugs the code will be welll
- 
+#hello fellow programmer i am back with great work to work
