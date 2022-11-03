@@ -14,5 +14,5 @@ Technologies
 configure or upload the database file locate at the database folder.
 Run the sytem in a Server environment like xamp for php.
 ======================================================================================
-Prepared by :Proffesuer Chisira.
+Prepared by :Proffesuer Chisira.(This project was done for learning purposes so its not at its perfection)
 =====================================================================================
